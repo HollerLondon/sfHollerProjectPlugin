@@ -70,7 +70,7 @@ foreach (array(
 if ($isSubversion)
 {
   // Add files
-  _exec('svn add symfony test/* apps/frontend/modules/* apps/frontend/config/error apps/frontend/config/unavailable.php config/* web/* web/.htaccess data/fixtures apps/frontend/templates/empty.php');
+  _exec('svn add symfony test/* apps/frontend/modules/* apps/frontend/config/error apps/frontend/config/unavailable.php config/* web/* web/.htaccess data/fixtures lib/form/BaseForm.class.php apps/frontend/templates/empty.php');
   
   // Global ignore
   file_put_contents($tmp, '.sass-cache');
