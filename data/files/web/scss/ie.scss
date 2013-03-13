@@ -1,0 +1,10 @@
+@import "compass/css3";
+@import "compass/utilities/general/clearfix";
+@import "compass/typography/text/replacement";
+@import "compass/utilities/sprites";
+
+// variables, mixins, etc
+@import "partials/base";
+
+// old IEs don't support media queries so put desktop styles in here
+@import "partials/desktop";
