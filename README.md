@@ -3,7 +3,7 @@ sfHollerProjectPlugin
 
 @author Jo Carter <jocarter@holler.co.uk>
 
-@version 0.1
+@version 0.2
 
 Introduction
 -------------
@@ -19,12 +19,12 @@ Additional Plugin installed:
  
 And the second installer adds
 
- * sfCacophonyPlugin: https://github.com/HollerLondon/sfCacophonyPlugin.git (for Facebook oauth)
- * sfFacebookAppPlugin: https://github.com/HollerLondon/sfFacebookAppPlugin.git/trunk (for Facebook oauth/app integration)
+ * sfCacophonyPlugin: https://github.com/HollerLondon/sfCacophonyPlugin (for Facebook oauth)
+ * sfFacebookAppPlugin: https://github.com/HollerLondon/sfFacebookAppPlugin (for Facebook oauth/app integration)
 
 Also vendors (inc symfony)
 
- * facebook: https://github.com/facebook/facebook-php-sdk.git/trunk
+ * facebook: https://github.com/facebook/facebook-php-sdk
 
 Instructions
 ------------
