@@ -6,6 +6,10 @@ homepage:
   url:   /
   param: { module: index, action: index }
 
+authUser:
+  url:  /user/auth
+  param: { module: index, action: authUser }
+
 
 # Overriding route
 sf_guard_signout:
