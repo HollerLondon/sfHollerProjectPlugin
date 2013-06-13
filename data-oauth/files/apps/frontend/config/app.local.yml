@@ -1,0 +1,12 @@
+dev:
+ .settings: 
+    cacophony: 
+      providers: 
+        facebook: 
+          consumer_key:      
+          consumer_secret:  
+
+  facebook:
+    app_id:               
+    app_secret:           
+    namespace: 

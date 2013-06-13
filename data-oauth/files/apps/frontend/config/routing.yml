@@ -1,0 +1,13 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: index, action: index }
+
+
+# Overriding route
+sf_guard_signout:
+  url:    /logout
+  param:  { module: sfGuardAuth, action: signout }

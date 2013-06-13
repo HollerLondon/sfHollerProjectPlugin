@@ -1,0 +1,66 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+  .settings: 
+    # staging details 
+    cacophony: 
+      providers: 
+        facebook: 
+          consumer_key:      
+          consumer_secret:  
+          scope:            "email" 
+
+  facebook:
+    # staging details
+    app_id:               
+    app_secret:           
+    namespace:                                                  
+   
+    app_scope:            "email"
+    user_data:            [ username, first_name, last_name, email ]   # defaults - fb_uid also included
+    
+    default_og_data:
+      site_name:          "##PROJECTFNAME##"
+      locale:             en_GB
+      title:              "##PROJECTFNAME##"
+      description:        ""
+    
+    like_gate:
+      enabled:            true
+      module:             index
+      action:             like
+
+  sf_google_analytics_plugin:
+     enabled:             false
+
+
+prod:
+  .settings: 
+    # live details 
+    cacophony: 
+      providers: 
+        facebook: 
+          consumer_key:      
+          consumer_secret:  
+
+  facebook:
+    # live details
+    app_id:               
+    app_secret:           
+    namespace: 
+    
+  sf_google_analytics_plugin:
+     enabled:             true
+     profile_id:          
+     insertion:           top
+     tracker:             asynchronous
+
+
+# Your local dev app config (copy above, and replace FB app details)
+# should only contain dev: config
+<?php if (is_file(sfConfig::get('sf_app_config_dir').DIRECTORY_SEPARATOR.'app.local.yml'))
+{
+  include(sfConfig::get('sf_app_config_dir').DIRECTORY_SEPARATOR.'app.local.yml');
+} ?>

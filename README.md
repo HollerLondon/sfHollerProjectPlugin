@@ -8,7 +8,7 @@ sfHollerProjectPlugin
 Introduction
 -------------
 
-Simple plugin containing an installer to create the basics of an app, with config and error pages to make life easier and automate the boring bits
+Simple plugin containing two installers to create the basics of an app, with config and error pages to make life easier and automate the boring bits.  The second installer creates a Facebook oauth project.
 
 Additional Plugin installed:
 ----------------------------
@@ -16,6 +16,15 @@ Additional Plugin installed:
  * sfMobilePlugin: https://github.com/HollerLondon/sfMobilePlugin (For detecting if users are on mobile)
  * sfDoctrineGuardPlugin: http://www.symfony-project.org/plugins/sfDoctrineGuardPlugin (For backend)
  * sfGoogleAnalyticsPlugin: http://www.symfony-project.org/plugins/sfGoogleAnalyticsPlugin (For tracking)
+ 
+And the second installer adds
+
+ * sfCacophonyPlugin: https://github.com/HollerLondon/sfCacophonyPlugin.git (for Facebook oauth)
+ * sfFacebookAppPlugin: https://github.com/HollerLondon/sfFacebookAppPlugin.git/trunk (for Facebook oauth/app integration)
+
+Also vendors (inc symfony)
+
+ * facebook: https://github.com/facebook/facebook-php-sdk.git/trunk
 
 Instructions
 ------------
@@ -31,6 +40,10 @@ NOTE: svn:externals included below.
  3. Generate the project using the installer:
  
         php lib/vendor/symfony/data/bin/symfony generate:project --installer=plugins/sfHollerProjectPlugin/data/installer.php PROJECTNAME
+        
+    OR
+        
+        php lib/vendor/symfony/data/bin/symfony generate:project --installer=plugins/sfHollerProjectPlugin/data-oauth/installer.php PROJECTNAME
         
  4. The plugin will no longer be in the `plugins` folder `svn:externals` - you can safely remove it from your local directory.
  
